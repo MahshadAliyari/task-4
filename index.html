@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="task 4 of js contains tabs, modals and dropdown"
+    />
+    <title>Task 4 Of Js</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>تسک چهار از جاوا اسکریپت</h1>
+      <!--Dropdown-->
+      <section class="dropdown">
+        <button id="dropdownBtn">محصولات</button>
+        <ul id="dropdownMenu">
+          <li><a href="#">لپ تاپ</a></li>
+          <li><a href="#">موبایل</a></li>
+          <li><a href="#">هدفون</a></li>
+        </ul>
+      </section>
+    </header>
+    <main>
+      <!--Tabs-->
+      <section class="tabs">
+        <nav class="tab-buttons">
+          <section class="tab-btn active" data-tab="about">درباره ما</section>
+          <section class="tab-btn" data-tab="services">خدمات</section>
+          <section class="tab-btn" data-tab="contact">تماس با ما</section>
+        </nav>
+        <article class="tab-content active" id="about">
+          <h2>درباره ما</h2>
+          <p>این بخش درباره ما است.</p>
+        </article>
+        <article class="tab-content" id="services">
+          <h2>خدمات</h2>
+        </article>
+        <article class="tab-content" id="contact">
+          <h2>ارتباط با ما</h2>
+        </article>
+      </section>
+      <!--Modal-->
+      <section class="modal" id="modal">
+        <article class="modal-content">
+          <button id="closeModal" aria-label="بستن">×</button>
+          <h2>جزئیات</h2>
+          <p>این اطلاعات داخل Modal نمایش داده می‌شود.</p>
+        </article>
+      </section>
+      <button id="openModal">مشاهده جزئیات</button>
+      <!--Event Delegation-->
+      <section class="items">
+        <h2>لیست ایتم ها</h2>
+        <ul id="itemList">
+          <li>
+            ایتم اول
+            <button class="delete-btn">حذف</button>
+          </li>
+          <li>
+            ایتم دوم
+            <button class="delete-btn">حذف</button>
+          </li>
+          <li>
+            ایتم سوم
+            <button class="delete-btn">حذف</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
