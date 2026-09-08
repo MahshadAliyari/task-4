@@ -82,15 +82,6 @@ Event Delegation is used to handle events from multiple elements through a paren
 
 Instead of adding an event listener to every individual element, the event listener is attached to their parent.
 
-Example:
-
-```js
-tabsContainer.addEventListener("click", function (event) {
-    if (event.target.matches(".tab")) {
-        // Handle tab click
-    }
-});
-
 ---
 
 ## Live Demo
