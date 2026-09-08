@@ -8,7 +8,7 @@ const dropdownMenu = document.querySelector("#dropdownMenu");
 dropdownBtn.addEventListener("click", () => { 
  
     dropdownMenu.classList.toggle("active"); 
-    dropdownBtn.classList.toggle("acive"); 
+    dropdownBtn.classList.toggle("active"); 
  
 }); 
  
