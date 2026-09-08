@@ -1,6 +1,6 @@
 # JavaScript Interactive UI
 
-A small interactive web project built with vanilla JavaScript.
+A small interactive web project built with  JavaScript.
 
 This project focuses on DOM manipulation, events, `classList`, Event Delegation, Tabs, Modal, and Dropdown interactions.
 
@@ -43,9 +43,9 @@ The main goal is to understand how JavaScript interacts with HTML and CSS throug
 
 ## 🛠 Technologies
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla JS)
+- HTML
+- CSS
+- JavaScript
 
 No external JavaScript libraries or frameworks were used.
 
@@ -93,3 +93,9 @@ tabsContainer.addEventListener("click", function (event) {
 
 
 ## Live Demo
+
+## AI Transparency
+
+
+- **How I used it:** Instead of asking the AI to simply explain the concepts, I asked it to quiz me on the JavaScript concepts required for the task, and guide me wherever I didn't know the answer. After writing the code myself based on what I learned, I asked the AI to review it and guide me step by step toward fixing the issues, rather than giving me the fixes directly.
+- **What I changed:** I wrote and corrected the code myself throughout the process; the AI was used for concept reinforcement and guided debugging, not for generating or directly fixing the code.
