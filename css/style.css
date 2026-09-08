@@ -264,6 +264,7 @@ main {
 
 .tab-btn:hover {
   color: var(--text);
+  cursor: pointer;
 }
 
 .tab-btn.active {
