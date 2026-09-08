@@ -91,11 +91,15 @@ tabsContainer.addEventListener("click", function (event) {
     }
 });
 
+---
 
 ## Live Demo
 
-## AI Transparency
+https://mahshadaliyari.github.io/task-4/
 
+---
+
+## AI Transparency
 
 - **How I used it:** Instead of asking the AI to simply explain the concepts, I asked it to quiz me on the JavaScript concepts required for the task, and guide me wherever I didn't know the answer. After writing the code myself based on what I learned, I asked the AI to review it and guide me step by step toward fixing the issues, rather than giving me the fixes directly.
 - **What I changed:** I wrote and corrected the code myself throughout the process; the AI was used for concept reinforcement and guided debugging, not for generating or directly fixing the code.
