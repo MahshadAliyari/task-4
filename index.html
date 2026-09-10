@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Luka - فروشگاه آنلاین محصولات دیجیتال" />
+    <meta name="description" content="Luka - فروشگاه هوشمند محصولات دیجیتال" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -22,14 +22,21 @@
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- =========================
+         HEADER
+    ========================== -->
+
     <header class="site-header">
       <div class="brand">
         <h1>Luka</h1>
+
         <p>فروشگاه هوشمند محصولات دیجیتال</p>
       </div>
 
-      <!-- Dropdown -->
+      <!-- =========================
+             DROPDOWN
+        ========================== -->
+
       <section class="dropdown">
         <button id="dropdownBtn">محصولات</button>
 
@@ -50,82 +57,122 @@
     </header>
 
     <main>
-      <!-- Tabs -->
+      <!-- =========================
+             TABS
+        ========================== -->
+
       <section class="tabs">
         <nav class="tab-buttons">
-          <section class="tab-btn active" data-tab="about">درباره لوکا</section>
+          <button class="tab-btn active" data-tab="about">درباره لوکا</button>
 
-          <section class="tab-btn" data-tab="services">خدمات</section>
+          <button class="tab-btn" data-tab="services">خدمات</button>
 
-          <section class="tab-btn" data-tab="contact">تماس با ما</section>
+          <button class="tab-btn" data-tab="contact">تماس با ما</button>
         </nav>
+
+        <!-- ABOUT -->
 
         <article class="tab-content active" id="about">
           <h2>درباره لوکا</h2>
 
           <p>
-            لوکا یک فروشگاه آنلاین برای خرید محصولات دیجیتال با تجربه‌ای ساده و
-            مدرن است.
+            لوکا یک فروشگاه آنلاین برای خرید محصولات دیجیتال باکیفیت و مدرن است.
+          </p>
+
+          <p>
+            هدف ما ارائه محصولات کاربردی، تجربه خرید ساده و خدمات مناسب به
+            کاربران است.
           </p>
         </article>
+
+        <!-- SERVICES -->
 
         <article class="tab-content" id="services">
           <h2>خدمات لوکا</h2>
 
           <p>
-            ارسال سریع، ضمانت اصالت کالا و پشتیبانی آنلاین از خدمات لوکا هستند.
+            ارائه محصولات دیجیتال، پشتیبانی مشتریان و مشاوره برای انتخاب محصول
+            مناسب.
           </p>
         </article>
 
-        <article class="tab-content" id="contact">
-          <h2>تماس با لوکا</h2>
+        <!-- CONTACT -->
 
-          <p>
-            برای ارتباط با تیم لوکا می‌توانید از طریق پشتیبانی آنلاین با ما در
-            تماس باشید.
-          </p>
+        <article class="tab-content" id="contact">
+          <h2>تماس با ما</h2>
+
+          <p>ایمیل: info@luka.com</p>
+
+          <p>تلفن: 12345678-021</p>
         </article>
       </section>
 
-      <!-- Products -->
+      <!-- =========================
+             PRODUCTS
+        ========================== -->
+
       <section class="items">
         <h2>محصولات منتخب</h2>
 
         <ul id="itemList">
-          <li>
-            <span>لپ‌تاپ حرفه‌ای Luka Pro</span>
-            <button class="delete-btn">حذف</button>
-          </li>
+          <!-- LAPTOP -->
 
           <li>
-            <span>گوشی هوشمند Luka X</span>
-            <button class="delete-btn">حذف</button>
+            <span> لپ‌تاپ حرفه‌ای Luka Pro </span>
+
+            <div class="product-actions">
+              <button class="details-btn" data-product="laptop">جزئیات</button>
+
+              <button class="delete-btn">حذف</button>
+            </div>
           </li>
 
+          <!-- PHONE -->
+
           <li>
-            <span>هدفون بی‌سیم Luka Air</span>
-            <button class="delete-btn">حذف</button>
+            <span> گوشی هوشمند Luka X </span>
+
+            <div class="product-actions">
+              <button class="details-btn" data-product="phone">جزئیات</button>
+
+              <button class="delete-btn">حذف</button>
+            </div>
+          </li>
+
+          <!-- HEADPHONE -->
+
+          <li>
+            <span> هدفون بی‌سیم Luka Air </span>
+
+            <div class="product-actions">
+              <button class="details-btn" data-product="headphone">
+                جزئیات
+              </button>
+
+              <button class="delete-btn">حذف</button>
+            </div>
           </li>
         </ul>
       </section>
 
-      <!-- Modal Trigger -->
-      <button id="openModal">مشاهده جزئیات محصول</button>
+      <!-- =========================
+             MODAL
+        ========================== -->
 
-      <!-- Modal -->
       <section class="modal" id="modal">
         <article class="modal-content">
           <button id="closeModal" aria-label="بستن">×</button>
 
-          <h2>Luka Pro</h2>
+          <h2 id="modalTitle">عنوان محصول</h2>
 
-          <p>
-            لپ‌تاپ حرفه‌ای Luka Pro با طراحی مدرن، عملکرد قدرتمند و مناسب برای
-            کارهای روزمره و حرفه‌ای.
-          </p>
+          <p id="modalDescription">اطلاعات محصول اینجا نمایش داده می‌شود.</p>
         </article>
       </section>
     </main>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
 
     <script src="js/script.js"></script>
   </body>
